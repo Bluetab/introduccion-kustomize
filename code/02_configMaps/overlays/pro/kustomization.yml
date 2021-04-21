@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+
+configMapGenerator:
+  - name: my-ConfigMap
+    behavior: replace
+    literals:
+      - ENVIRONMENT=pro

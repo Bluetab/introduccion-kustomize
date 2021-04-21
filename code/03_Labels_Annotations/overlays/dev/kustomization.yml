@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+
+commonLabels:
+  mycommonlabel: my-app
+
+commonAnnotations:
+  my/common/annotation: This is a common annotation

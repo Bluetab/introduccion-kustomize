@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+
+configMapGenerator:
+  - name: my-ConfigMap
+    behavior: merge
+    literals:
+      - ENVIRONMENT=dev
+      - PATH=/

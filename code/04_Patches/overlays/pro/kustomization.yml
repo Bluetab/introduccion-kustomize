@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+
+patches:
+  - patch: |-
+      - op: add
+        path: /metadata/annotations
+        value:
+          - eks.amazonaws.com/role-arn: arn:aws:iam::123456789012:role/eks-iam-AssumeRole-XXXXXXXXXXX
+    target:
+      kind: Deployment
+      name: nginx-deployment
